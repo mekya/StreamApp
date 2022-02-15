@@ -123,6 +123,19 @@
 		<url-pattern>*.html</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>hls-serlvet</servlet-name>
+		<servlet-class>
+			io.antmedia.enterprise.streamapp.HLSServlet
+		</servlet-class>
+		
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hls-serlvet</servlet-name>
+		<url-pattern>*.m3u8</url-pattern>
+	</servlet-mapping>
+
 	<mime-mapping>
 		<extension>m3u8</extension>
 		<mime-type>application/x-mpegURL</mime-type>
